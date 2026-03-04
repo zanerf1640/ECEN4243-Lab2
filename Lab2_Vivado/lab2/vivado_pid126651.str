@@ -1,0 +1,167 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 126651
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Dec 08 14:31:35 CST 2025
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Ubuntu
+OS Version: 6.8.0-52-generic
+OS Architecture: amd64
+Available processors (cores): 20
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 0
+Screen size: 3840x2160
+Local screen bounds: x = 70, y = 27, width = 3770, height = 2133
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/opt/Xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/opt/Xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	ece-admin
+User home directory: /home/ece-admin
+User working directory: /home/ece-admin/ecen4243S25/lab2/lab2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2023.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: /home/ece-admin/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/ece-admin/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/ece-admin/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/opt/Xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/ece-admin/ecen4243S25/lab2/lab2/vivado.log
+Vivado journal file: 	/home/ece-admin/ecen4243S25/lab2/lab2/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-126651-CEAT-ENDV350-07L
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /opt/Xilinx/Vivado/2023.2
+RDI_BASEROOT: /opt/Xilinx/Vivado
+RDI_BINROOT: /opt/Xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: /opt/Xilinx
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /opt/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/22:/opt/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /opt/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /opt/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/ece-admin/ecen4243S25/lab2/lab2:CEAT-ENDV350-07L_1765225887_126610
+RDI_SHARED_DATA: /opt/Xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: /opt/Xilinx/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /opt/Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2023.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2023.2
+
+
+GUI allocated memory:	672 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,695 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // u (PAResourceEtoH.GettingStartedView_OPEN_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 78 MB. Current time: 12/8/25, 2:31:36 PM CST
+setFileChooser("/home/ece-admin/ecen4243S25/lab2/lab2/lab2.xpr");
+// [GUI Memory]: 85 MB (+86446kb) [00:00:09]
+// [Engine Memory]: 1,599 MB (+1525549kb) [00:00:09]
+// Opening Vivado Project: /home/ece-admin/ecen4243S25/lab2/lab2/lab2.xpr. Version: Vivado v2023.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+14286kb) [00:00:11]
+// [Engine Memory]: 1,806 MB (+132825kb) [00:00:11]
+// [GUI Memory]: 129 MB (+21852kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1040 ms.
+// Tcl Message: open_project /home/ece-admin/ecen4243S25/lab2/lab2/lab2.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/jstine/ecen4243S25/lab2/fpga/.Xil/Vivado-937952-iq9/PrjAr/_X_' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// [GUI Memory]: 138 MB (+2681kb) [00:00:11]
+// Project name: lab2; location: /home/ece-admin/ecen4243S25/lab2/lab2; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// [GUI Memory]: 159 MB (+15001kb) [00:00:14]
+// [Engine Memory]: 2,149 MB (+264531kb) [00:00:14]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 

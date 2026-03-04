@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec  8 15:19:53 2025
+# Process ID: 217629
+# Current directory: /home/ece-admin/Desktop/lab2
+# Command line: vivado
+# Log file: /home/ece-admin/Desktop/lab2/vivado.log
+# Journal file: /home/ece-admin/Desktop/lab2/vivado.jou
+# Running On: CEAT-ENDV350-07L, OS: Linux, CPU Frequency: 5135.787 MHz, CPU Physical cores: 14, Host memory: 16437 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ece-admin/Desktop/lab2/lab2.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+update_module_reference design_1_top_0_0
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+set_property PROBES.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/ece-admin/Desktop/lab2/lab2.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {/home/ece-admin/Desktop/lab2/lab2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
