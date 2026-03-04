@@ -25,6 +25,31 @@
 //   sw           0100011   010       immediate
 //   jal          1101111   immediate immediate
 
+// Implementing these instructions 
+// bge            1100011   101       immediate
+// bgeu           1100011   111       immediate
+// blt            1100011   100       immediate
+// bltu           1100011   110       immediate
+// bnez           1100011   001       immediate
+// jalr           1100111   000       immediate
+// lb             0000011   000       immediate
+// lbu            0000011   100       immediate
+// lh             0000011   001       immediate
+// lhu            0000011   101       immediate
+// lui            0110111   immediate immediate
+// sb             0100011   000       immediate
+// sh             0100011   001       immediate
+// sll            0110011   001       0000000
+// slli           0010011   001       immediate
+// sltiu          0010011   011       immediate
+// sltu           0110011   011       0000000
+// sra            0110011   101       0100000
+// srai           0010011   101       0100000
+// srl            0110011   101       0000000
+// srli           0010011   101       0000000
+// xor            0110011   100       0000000
+// xori           0010011   100       immediate
+
 module testbench();
 
    logic        clk;
@@ -73,6 +98,8 @@ module testbench();
      end
 endmodule // testbench
 
+
+// Actual implementation of RISC-V single-cycle processor
 module riscvsingle (input  logic        clk, reset,
 		    output logic [31:0] PC,
 		    input  logic [31:0] Instr,
@@ -96,6 +123,8 @@ module riscvsingle (input  logic        clk, reset,
    
 endmodule // riscvsingle
 
+// Implementation of the single-cycle controller
+// It generates control signals from the instruction opcode and function fields
 module controller (input  logic [6:0] op,
 		   input  logic [2:0] funct3,
 		   input  logic       funct7b5,
@@ -117,6 +146,8 @@ module controller (input  logic [6:0] op,
    
 endmodule // controller
 
+// Implementatino of the main decoder
+// It generates the main control signals from the instruction opcode
 module maindec (input  logic [6:0] op,
 		output logic [1:0] ResultSrc,
 		output logic 	   MemWrite,
@@ -139,11 +170,16 @@ module maindec (input  logic [6:0] op,
        7'b1100011: controls = 11'b0_10_0_0_00_1_01_0; // beq
        7'b0010011: controls = 11'b1_00_1_0_00_0_10_0; // I–type ALU
        7'b1101111: controls = 11'b1_11_0_0_10_0_00_1; // jal
-       default: controls = 11'bx_xx_x_x_xx_x_xx_x; // ???
+       7'b0110111: controls = 11'b1_11_0_0_00_0_00_0; // lui
+       // These are the new instructions that you need to implement
+       7'b1100111: controls = 11'b1_00_1_0_00_0_10_0; // jalr
+      default: controls = 11'bx_xx_x_x_xx_x_xx_x; // ???
      endcase // case (op)
    
 endmodule // maindec
 
+// Implementation of the ALU decoder
+// It generates the ALU control signals from the instruction function fields and the ALUOp field from the main decoder
 module aludec (input  logic       opb5,
 	       input  logic [2:0] funct3,
 	       input  logic 	  funct7b5,
@@ -171,6 +207,8 @@ module aludec (input  logic       opb5,
    
 endmodule // aludec
 
+// Implementation of the single-cycle datapath
+// It generates the next PC, reads and writes the register file, extends immediates, and performs ALU operations
 module datapath (input  logic        clk, reset,
 		 input  logic [1:0]  ResultSrc,
 		 input  logic 	     PCSrc, ALUSrc,
@@ -204,6 +242,7 @@ module datapath (input  logic        clk, reset,
 
 endmodule // datapath
 
+// Implementation of a 32-bit adder
 module adder (input  logic [31:0] a, b,
 	      output logic [31:0] y);
    
@@ -211,6 +250,7 @@ module adder (input  logic [31:0] a, b,
    
 endmodule
 
+// Implementation of the immediate extension unit
 module extend (input  logic [31:7] instr,
 	       input  logic [1:0]  immsrc,
 	       output logic [31:0] immext);
@@ -230,6 +270,7 @@ module extend (input  logic [31:7] instr,
    
 endmodule // extend
 
+// Implementation of a flop with asynchronous reset
 module flopr #(parameter WIDTH = 8)
    (input  logic             clk, reset,
     input logic [WIDTH-1:0]  d,
@@ -241,6 +282,7 @@ module flopr #(parameter WIDTH = 8)
    
 endmodule // flopr
 
+// Implementation of a flop with asynchronous reset and enable
 module flopenr #(parameter WIDTH = 8)
    (input  logic             clk, reset, en,
     input logic [WIDTH-1:0]  d,
@@ -252,6 +294,7 @@ module flopenr #(parameter WIDTH = 8)
    
 endmodule // flopenr
 
+// Implementation of a 2-input multiplexer
 module mux2 #(parameter WIDTH = 8)
    (input  logic [WIDTH-1:0] d0, d1,
     input logic 	     s,
@@ -261,6 +304,7 @@ module mux2 #(parameter WIDTH = 8)
    
 endmodule // mux2
 
+// Implementation of a 3-input multiplexer
 module mux3 #(parameter WIDTH = 8)
    (input  logic [WIDTH-1:0] d0, d1, d2,
     input logic [1:0] 	     s,
@@ -270,6 +314,7 @@ module mux3 #(parameter WIDTH = 8)
    
 endmodule // mux3
 
+// Implementation of the top-level module that instantiates the processor and memories
 module top (input  logic        clk, reset,
 	    output logic [31:0] WriteData, DataAdr,
 	    output logic 	MemWrite);
@@ -284,6 +329,7 @@ module top (input  logic        clk, reset,
    
 endmodule // top
 
+// Implementation of the instruction memory
 module imem (input  logic [31:0] a,
 	     output logic [31:0] rd);
    
@@ -293,6 +339,7 @@ module imem (input  logic [31:0] a,
    
 endmodule // imem
 
+// Implementation of the data memory
 module dmem (input  logic        clk, we,
 	     input  logic [31:0] a, wd,
 	     output logic [31:0] rd);
@@ -305,6 +352,7 @@ module dmem (input  logic        clk, we,
    
 endmodule // dmem
 
+// Implementation of the ALU
 module alu (input  logic [31:0] a, b,
             input  logic [2:0] 	alucontrol,
             output logic [31:0] result,
@@ -334,6 +382,7 @@ module alu (input  logic [31:0] a, b,
    
 endmodule // alu
 
+// Implementation of the register file
 module regfile (input  logic        clk, 
 		input  logic 	    we3, 
 		input  logic [4:0]  a1, a2, a3, 
