@@ -8,7 +8,7 @@
 # ** Error: (vlib-35) Failed to create directory "work".
 # File exists. (errno = EEXIST)
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:26:47 on Mar 11,2026
+# Start time: 15:17:27 on Mar 11,2026
 # vlog -reportprogress 300 riscv_single.sv 
 # -- Compiling module testbench
 # -- Compiling module riscvsingle
@@ -31,10 +31,11 @@
 # Top level modules:
 # 	testbench
 # 	flopenr
-# End time: 14:26:47 on Mar 11,2026, Elapsed time: 0:00:00
+# 	mux3
+# End time: 15:17:28 on Mar 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -debugdb -voptargs="+acc" work.testbench 
-# Start time: 14:26:47 on Mar 11,2026
+# Start time: 15:17:28 on Mar 11,2026
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.top
@@ -49,12 +50,15 @@
 # Loading work.regfile
 # Loading work.extend
 # Loading work.alu
-# Loading work.mux3
+# ** Error: (vsim-3033) riscv_single.sv(213): Instantiation of 'mux4' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rv32single/dp File: riscv_single.sv
+#         Searched libraries:
+#             C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work
 # Loading work.imem
 # Loading work.dmem
-# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
-# It appears vopt was not run with -debugdb option on this design.
-# Advanced Causality and Schematic debug features will not be available.
-# ** Error: (vsim-8357) Internal debugDB error id:ct1  ret:1 table context_tbl already exists
-# End time: 14:30:46 on Mar 11,2026, Elapsed time: 0:03:59
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ././riscv_single.do PAUSED at line 33
+# End time: 15:17:48 on Mar 11,2026, Elapsed time: 0:00:20
 # Errors: 1, Warnings: 0
