@@ -1,0 +1,61 @@
+# do {.\riscv_single.do}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:51 on Mar 11,2026
+# vlog -reportprogress 300 riscv_single.sv 
+# -- Compiling module testbench
+# -- Compiling module riscvsingle
+# -- Compiling module controller
+# -- Compiling module maindec
+# -- Compiling module aludec
+# -- Compiling module datapath
+# -- Compiling module adder
+# -- Compiling module extend
+# -- Compiling module flopr
+# -- Compiling module flopenr
+# -- Compiling module mux2
+# -- Compiling module mux3
+# -- Compiling module top
+# -- Compiling module imem
+# -- Compiling module dmem
+# -- Compiling module alu
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	testbench
+# 	flopenr
+# End time: 13:44:51 on Mar 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -debugdb -voptargs="+acc" work.testbench "+memfile=test_hw.memfile" 
+# Start time: 13:44:53 on Mar 11,2026
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux3
+# Loading work.imem
+# Loading work.dmem
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# .main_pane.list.interior.cs.body
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ././riscv_single.do line 39
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 65 of file "test_hw.memfile". (Current address [64], address range [0:63])    : riscv_single.sv(70)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "test_hw.memfile". (Current address [256], address range [0:255])    : riscv_single.sv(71)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# End time: 13:46:54 on Mar 11,2026, Elapsed time: 0:02:01
+# Errors: 3, Warnings: 2
