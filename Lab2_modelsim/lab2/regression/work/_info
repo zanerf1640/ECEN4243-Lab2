@@ -10,33 +10,33 @@ cModel Technology
 Z0 dC:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression
 vadder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1773260247
+Z2 !s110 1773789509
 !i10b 1
-!s100 Mj>G6ZQKah3Vj2I;D9HiN3
-IXC^i^B0F25gzHb_GT@]JA1
+!s100 lIFTYXnGz??b`T7og:6j92
+I7SFlD6KzB0P:IJ<Yljid`2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 riscv_single_sv_unit
 S1
 R0
-Z5 w1773259933
+Z5 w1773788874
 Z6 8riscv_single.sv
 Z7 Friscv_single.sv
-L0 217
+L0 233
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1773260247.000000
+Z9 !s108 1773789509.000000
 Z10 !s107 riscv_single.sv|
 Z11 !s90 -reportprogress|300|riscv_single.sv|
 !i113 1
 Z12 tCvgOpt 0
 valu
 R1
-Z13 !s110 1773260248
+R2
 !i10b 1
-!s100 302[[Kg1[e>mAb270jfl_2
-IENS]:Bbe>ha]l:goi8m?C3
+!s100 2m`HD54RNnzkkV5lWV_I`3
+I?NQg`fd`GcmGCZ[Kb0S7R2
 R3
 R4
 S1
@@ -44,7 +44,7 @@ R0
 R5
 R6
 R7
-L0 319
+L0 345
 R8
 r1
 !s85 0
@@ -58,8 +58,8 @@ valudec
 R1
 R2
 !i10b 1
-!s100 Dhn?R7GbjY;VQ@<z`9O@[1
-I?DfN;8oKM:<6E8d=U;5EE0
+!s100 USbgRUa6Ff?[S0i1C7;M70
+IGN50NCeDQkK2z=Q7QMg`;3
 R3
 R4
 S1
@@ -67,7 +67,7 @@ R0
 R5
 R6
 R7
-L0 149
+L0 161
 R8
 r1
 !s85 0
@@ -81,8 +81,8 @@ vcontroller
 R1
 R2
 !i10b 1
-!s100 [EH;zfn3`R?_EeVaa;lNZ0
-IA68KZaUk8?Taa@:i:U@012
+!s100 [gzU1>_`D8Lo<2m`0>g<h2
+IPk`MP<jP3>`LilKIlX3Cc3
 R3
 R4
 S1
@@ -90,7 +90,7 @@ R0
 R5
 R6
 R7
-L0 98
+L0 99
 R8
 r1
 !s85 0
@@ -104,8 +104,8 @@ vdatapath
 R1
 R2
 !i10b 1
-!s100 kXE1`bjN1j8;jMX_id07S2
-I7^lXUH?BCoeo1VEWbn5oZ2
+!s100 lWSXlZ4SZ9E80<QimCVWk2
+IAH;k7zh6A214CbzXLa<TC2
 R3
 R4
 S1
@@ -113,7 +113,7 @@ R0
 R5
 R6
 R7
-L0 184
+L0 195
 R8
 r1
 !s85 0
@@ -125,10 +125,10 @@ R11
 R12
 vdmem
 R1
-R13
+R2
 !i10b 1
-!s100 ZZaSe4fKmLIOiFFSSQ8Oz2
-IGO@K8EA8_18F1A7MG4Z<G0
+!s100 [FlzczJ0h0oJ]?gii8_Dm2
+IO0IGV0<A_JJo>TJj^RYj_2
 R3
 R4
 S1
@@ -136,7 +136,7 @@ R0
 R5
 R6
 R7
-L0 307
+L0 333
 R8
 r1
 !s85 0
@@ -150,8 +150,8 @@ vextend
 R1
 R2
 !i10b 1
-!s100 `@[_H>`gNCMbDmZN9D6^;1
-ITcC9W<do?58C`8@A[`Cj;2
+!s100 R9]^a<bmYGgOWQ8>;SUKb3
+IC9DcRaTUCANU6lz8<@O[a0
 R3
 R4
 S1
@@ -159,7 +159,7 @@ R0
 R5
 R6
 R7
-L0 224
+L0 240
 R8
 r1
 !s85 0
@@ -173,8 +173,8 @@ vflopenr
 R1
 R2
 !i10b 1
-!s100 SH8jm4OlW;kfBkAd5NF2C3
-Idd5Y8lPQ1UOilSNjHbFFS1
+!s100 SNHgfmR2@=7SNjWL>MDa13
+IBCz_AzQT2M8SJKj]DXC7G2
 R3
 R4
 S1
@@ -182,7 +182,7 @@ R0
 R5
 R6
 R7
-L0 255
+L0 273
 R8
 r1
 !s85 0
@@ -196,8 +196,8 @@ vflopr
 R1
 R2
 !i10b 1
-!s100 CEjC>VV]f:4XJbZ80B=PP3
-Ioh11M4RzYNdb4GLB5nNl12
+!s100 T6cg]6R8]hGQ=;nHoncF]0
+I4QaaMb^jJ`;Hd`0c6nB1M1
 R3
 R4
 S1
@@ -205,7 +205,7 @@ R0
 R5
 R6
 R7
-L0 244
+L0 262
 R8
 r1
 !s85 0
@@ -219,8 +219,8 @@ vimem
 R1
 R2
 !i10b 1
-!s100 10];gdJ:S3DD=<1l3AHHZ1
-I=adTe7olEBf=OCPnGlFD[0
+!s100 F2SElUK:a^2Ne_9fGag=I3
+I;lT;f1`k1K3GYelI47b`i1
 R3
 R4
 S1
@@ -228,7 +228,7 @@ R0
 R5
 R6
 R7
-L0 298
+L0 324
 R8
 r1
 !s85 0
@@ -242,8 +242,8 @@ vmaindec
 R1
 R2
 !i10b 1
-!s100 4fkHXOPj0BAQ4mgk[5W?P3
-I4cR1nzhDY]mk[6dV?RTY81
+!s100 [cDdj`7[blYRlkPij:fcI3
+I[_TzgidcI?J<6;YEXV[@e2
 R3
 R4
 S1
@@ -251,7 +251,7 @@ R0
 R5
 R6
 R7
-L0 119
+L0 130
 R8
 r1
 !s85 0
@@ -265,8 +265,8 @@ vmux2
 R1
 R2
 !i10b 1
-!s100 _Q6i<eZkJEa?8;[Wij@F60
-I3D9QQ^B@9U=C:]nIPR>o40
+!s100 mOEc?3@Ocl<=f6l0hUb^_3
+IYTYCQkNznC9m<kMO?ddf@3
 R3
 R4
 S1
@@ -274,7 +274,7 @@ R0
 R5
 R6
 R7
-L0 266
+L0 284
 R8
 r1
 !s85 0
@@ -288,8 +288,8 @@ vmux3
 R1
 R2
 !i10b 1
-!s100 6?0Yd8=9hG`?0Go2Oi?D=1
-IMK2OTS@@]jlK_UQIHKlHE0
+!s100 UA`FdS7[F`i>8eo39dU^W3
+IBJo9I816V?S9j[RhR@Klg2
 R3
 R4
 S1
@@ -297,7 +297,30 @@ R0
 R5
 R6
 R7
-L0 275
+L0 293
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vmux4
+R1
+R2
+!i10b 1
+!s100 M1]66VKAc753jk9l0kl2Z2
+IXOW?F`S18N>4X05TGJ7NX2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 302
 R8
 r1
 !s85 0
@@ -309,10 +332,10 @@ R11
 R12
 vregfile
 R1
-R13
+R2
 !i10b 1
-!s100 e;MdQ3QDJ`[eT5mGo:NR_0
-I25nH<N914dTO9G?mYQE?O0
+!s100 Bz2KjYC^CEGRg]Pn`dLiQ0
+Ib>I;OzOaA5hTV<X7^<_og0
 R3
 R4
 S1
@@ -320,7 +343,7 @@ R0
 R5
 R6
 R7
-L0 352
+L0 378
 R8
 r1
 !s85 0
@@ -334,8 +357,8 @@ vriscvsingle
 R1
 R2
 !i10b 1
-!s100 zBEZ3DLNVH9Ncn]>QZHL>0
-IVloW1MSD8z7Eci7kF]I;I3
+!s100 bD<d==nI;Dh18^?;NO:6:3
+Ijm08JgUo1QOYEBQY_P[Ah2
 R3
 R4
 S1
@@ -380,8 +403,8 @@ vtop
 R1
 R2
 !i10b 1
-!s100 hNCJK2@eS^ZdXUdj5DeDl1
-IDKJ0>f>?V8cZ8OFYma3BW1
+!s100 gBof97^23ETnljiJCWCdL2
+I9ZSb888@3:dUYln?f6gIP1
 R3
 R4
 S1
@@ -389,7 +412,7 @@ R0
 R5
 R6
 R7
-L0 284
+L0 310
 R8
 r1
 !s85 0

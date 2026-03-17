@@ -36,9 +36,9 @@ vsim -debugdb -voptargs=+acc work.testbench
 # view wave
 
 # Load Decoding
-do wave.do
+# do wave.do
 
--- display input and output signals as hexidecimal values
+# display input and output signals as hexidecimal values
 # Diplays All Signals recursively
 # add wave -hex -r /stimulus/*
 add wave -noupdate -divider -height 32 "Top"
@@ -47,9 +47,9 @@ add wave -noupdate -divider -height 32 "Instructions"
 add wave -noupdate -expand -group Instructions /testbench/dut/rv32single/reset
 add wave -noupdate -expand -group Instructions -color {Orange Red} /testbench/dut/rv32single/PC
 add wave -noupdate -expand -group Instructions -color Orange /testbench/dut/rv32single/Instr
-add wave -noupdate -expand -group Instructions -color Orange -radix Instructions /testbench/dut/rv32single/Instr
+add wave -noupdate -expand -group Instructions -color Orange -radix hex /testbench/dut/rv32single/Instr
 add wave -noupdate -expand -group Instructions -color Orange /testbench/dut/rv32single/dp/Instr
-add wave -noupdate -expand -group Instructions -color Orange -radix Instructions /testbench/dut/rv32single/dp/Instr
+add wave -noupdate -expand -group Instructions -color Orange -radix hex /testbench/dut/rv32single/dp/Instr
 add wave -noupdate -divider -height 32 "Datapath"
 add wave -hex /testbench/dut/rv32single/dp/*
 add wave -noupdate -divider -height 32 "Control"
@@ -79,11 +79,14 @@ configure wave -datasetprefix 0
 configure wave -rowmargin 4
 configure wave -childrowmargin 2
 
--- Run the Simulation
-run 300 ps
+# Run the Simulation
+run 300 ns
 
--- Add schematic
+# Add schematic
 # add schematic -full sim:/testbench/dut/rv32single
 
--- Save memory for checking (if needed)
+# Save memory for checking (if needed)
 # mem save -outfile memory.dat -wordsperline 1 /testbench/dut/dmem/RAM
+
+# Zoom to fit the simulation results
+wave zoom full
