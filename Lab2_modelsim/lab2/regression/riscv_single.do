@@ -30,7 +30,7 @@ vlib work
 vlog riscv_single.sv
 
 # start and run simulation
-vsim -debugdb -voptargs=+acc work.testbench
+vsim -voptargs="+acc" work.testbench
 
 # view list
 # view wave

@@ -1,14 +1,6 @@
 # do {.\riscv_single.do}
-# Error 133: Unable to remove directory "C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work/@_opt".
-# Error 133: Unable to remove directory "C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work/_dbcontainer/#64_opt".
-# Error 133: Unable to remove directory "C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work/_dbcontainer".
-# Error 133: Unable to remove directory "C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work/_temp".
-# Error 133: Unable to remove directory "C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work/_tempmsg".
-# Error 133: Unable to remove directory "C:/Users/zanef/OneDrive/Desktop/School/ECEN Curriculum/ECEN 4243/Lab/Lab2/Lab2_modelsim/lab2/regression/work".
-# ** Error: (vlib-35) Failed to create directory "work".
-# File exists. (errno = EEXIST)
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:18:29 on Mar 17,2026
+# Start time: 23:13:35 on Mar 19,2026
 # vlog -reportprogress 300 riscv_single.sv 
 # -- Compiling module testbench
 # -- Compiling module riscvsingle
@@ -32,10 +24,10 @@
 # Top level modules:
 # 	testbench
 # 	flopenr
-# End time: 18:18:29 on Mar 17,2026, Elapsed time: 0:00:00
+# End time: 23:13:35 on Mar 19,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -debugdb -voptargs="+acc" work.testbench 
-# Start time: 18:18:29 on Mar 17,2026
+# vsim -voptargs=""+acc"" work.testbench 
+# Start time: 23:13:36 on Mar 19,2026
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.top
@@ -54,18 +46,7 @@
 # Loading work.mux4
 # Loading work.imem
 # Loading work.dmem
-# ** Warning: (vsim-3015) riscv_single.sv(91): [PCDPC] - Port size (11) does not match connection size (2) for port 'PCSrc'. The port definition is at: riscv_single.sv(197).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rv32single/dp File: riscv_single.sv
-# ** Warning: (vsim-3015) riscv_single.sv(218): [PCDPC] - Port size (2) does not match connection size (11) for port 's'. The port definition is at: riscv_single.sv(295).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rv32single/dp/pcmux File: riscv_single.sv
-# ** Warning: (vsim-3839) riscv_single.sv(224): Variable '/testbench/dut/rv32single/dp/SrcA', driven via a port connection, is multiply driven. See riscv_single.sv(220).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rv32single/dp/srcamux File: riscv_single.sv
-# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
-# It appears vopt was not run with -debugdb option on this design.
-# Advanced Causality and Schematic debug features will not be available.
-# ** Error: (vsim-8357) Internal debugDB error id:ct1  ret:1 table context_tbl already exists
 # 0 ps
 # 315 ns
-# WARNING: No extended dataflow license exists
-# End time: 18:18:49 on Mar 17,2026, Elapsed time: 0:00:20
-# Errors: 1, Warnings: 4
+# End time: 23:15:41 on Mar 19,2026, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 0

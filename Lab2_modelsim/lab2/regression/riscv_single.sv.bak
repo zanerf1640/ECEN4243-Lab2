@@ -24,7 +24,7 @@
 //   lw	          0000011   010       immediate
 //   sw           0100011   010       immediate
 //   jal          1101111   immediate immediate
-`timescale 1ns/1ps
+
 module testbench();
 
    logic        clk;
@@ -40,7 +40,7 @@ module testbench();
    initial
      begin
 	string memfilename;
-        memfilename = {"test_hw.memfile"};
+        memfilename = {"test.memfile"};
         $readmemh(memfilename, dut.imem.RAM);
      end
 
@@ -240,7 +240,9 @@ module datapath (input  logic        clk, reset,
    mux2 #(32)  srcbmux (rd2, ImmExt, ALUSrc, SrcB);
    alu  main_alu (SrcA, SrcB, ALUControl, ALUResult, Zero, lt, ltu);
 
+   // --------------------------------------------------------
    // LOAD FORMATTER (lb, lbu, lh, lhu, lw)
+   // --------------------------------------------------------
    always_comb begin
        case (Instr[14:12]) // funct3 determines load size/sign
            3'b000: // lb (Load Byte, Sign-Extended)
@@ -273,8 +275,10 @@ module datapath (input  logic        clk, reset,
        endcase
    end
 
+   // --------------------------------------------------------
    // STORE FORMATTER (sb, sh, sw)
    // Read-Modify-Write logic to handle partial memory writes
+   // --------------------------------------------------------
    always_comb begin
        case (Instr[14:12]) // funct3 determines store size
            3'b000: // sb (Store Byte)
@@ -295,8 +299,11 @@ module datapath (input  logic        clk, reset,
        endcase
    end
 
-   // Result mux
+   // Result mux - Feed FormattedReadData instead of raw ReadData
    mux4 #(32) resmux (ALUResult, FormattedReadData, PCPlus4, 32'b0, ResultSrc, Result);
+
+   // Result mux
+   //mux4 #(32) resmux (ALUResult, ReadData, PCPlus4, 32'b0, ResultSrc, Result);
 
 endmodule // datapath
 
