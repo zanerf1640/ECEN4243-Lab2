@@ -1,6 +1,6 @@
 # do {.\riscv_single.do}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:13:35 on Mar 19,2026
+# Start time: 21:44:28 on Mar 20,2026
 # vlog -reportprogress 300 riscv_single.sv 
 # -- Compiling module testbench
 # -- Compiling module riscvsingle
@@ -24,10 +24,10 @@
 # Top level modules:
 # 	testbench
 # 	flopenr
-# End time: 23:13:35 on Mar 19,2026, Elapsed time: 0:00:00
+# End time: 21:44:28 on Mar 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" work.testbench 
-# Start time: 23:13:36 on Mar 19,2026
+# Start time: 21:44:28 on Mar 20,2026
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.top
@@ -47,6 +47,8 @@
 # Loading work.imem
 # Loading work.dmem
 # 0 ps
-# 315 ns
-# End time: 23:15:41 on Mar 19,2026, Elapsed time: 0:02:05
-# Errors: 0, Warnings: 0
+# 462 ns
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+# End time: 21:49:45 on Mar 20,2026, Elapsed time: 0:05:17
+# Errors: 0, Warnings: 2
