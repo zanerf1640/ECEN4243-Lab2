@@ -40,7 +40,7 @@ module testbench();
    initial
      begin
 	string memfilename;
-        memfilename = {"test_hw.memfile"};
+        memfilename = {"test.memfile"};
         $readmemh(memfilename, dut.imem.RAM);
      end
 
@@ -116,9 +116,10 @@ module controller (input  logic [6:0] op,
    logic [1:0] 			      ALUOp;
    logic 			            Branch;
    logic                  take_branch;
-   
+   // Map to maindec
    maindec md (op, ResultSrc, MemWrite, Branch,
 	       ALUSrc, RegWrite, Jump, ImmSrc, ALUOp, ALUSrcA);
+   // Map to aludec
    aludec ad (op[5], funct3, funct7b5, ALUOp, ALUControl);
 
    always_comb begin
@@ -154,7 +155,7 @@ module maindec (input  logic [6:0] op,
    
    always_comb
      case(op)
-       // RegWrite_ImmSrc_ALUSrc_MemWrite_ResultSrc_Branch_ALUOp_Jump
+       // RegWrite_ImmSrc_ALUSrc_MemWrite_ResultSrc_Branch_ALUOp_Jump_ALUSrcA_MemStrobe
        7'b0000011: controls = 13'b1_000_1_0_01_0_00_0_0; // lw
        7'b0100011: controls = 13'b0_001_1_1_00_0_00_0_0; // sw
        7'b0110011: controls = 13'b1_xxx_0_0_00_0_10_0_0; // R–type
@@ -226,14 +227,15 @@ module datapath (input  logic        clk, reset,
 
    assign byte_offset = ALUResult[1:0];
    
-   // next PC logic
+   // Next PC logic
    flopr #(32) pcreg (clk, reset, PCNext, PC);
    adder  pcadd4 (PC, 32'd4, PCPlus4);
    adder  pcaddbranch (PC, ImmExt, PCTarget);
    mux3 #(32) pcmux (PCPlus4, PCTarget, ALUResult, PCSrc, PCNext);
-   // register file logic
+   // Register file logic
    regfile  rf (clk, RegWrite, Instr[19:15], Instr[24:20],
 	       Instr[11:7], Result, rd1, rd2);
+   // Extension logic
    extend  ext (Instr[31:7], Instr[6:0], ImmSrc, ImmExt);
    // ALU logic
    mux2 #(32)  srcamux (rd1, PC, ALUSrcA, SrcA);

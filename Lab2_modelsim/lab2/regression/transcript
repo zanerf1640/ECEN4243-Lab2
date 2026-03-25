@@ -1,6 +1,19 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
 # do {.\riscv_single.do}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:28 on Mar 20,2026
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 14:17:48 on Mar 25,2026
 # vlog -reportprogress 300 riscv_single.sv 
 # -- Compiling module testbench
 # -- Compiling module riscvsingle
@@ -24,31 +37,31 @@
 # Top level modules:
 # 	testbench
 # 	flopenr
-# End time: 21:44:28 on Mar 20,2026, Elapsed time: 0:00:00
+# End time: 14:17:48 on Mar 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" work.testbench 
-# Start time: 21:44:28 on Mar 20,2026
+# Start time: 14:17:48 on Mar 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
-# Loading work.testbench
-# Loading work.top
-# Loading work.riscvsingle
-# Loading work.controller
-# Loading work.maindec
-# Loading work.aludec
-# Loading work.datapath
-# Loading work.flopr
-# Loading work.adder
-# Loading work.mux3
-# Loading work.regfile
-# Loading work.extend
-# Loading work.mux2
-# Loading work.alu
-# Loading work.mux4
-# Loading work.imem
-# Loading work.dmem
+# Loading work.testbench(fast)
+# Loading work.top(fast)
+# Loading work.riscvsingle(fast)
+# Loading work.controller(fast)
+# Loading work.maindec(fast)
+# Loading work.aludec(fast)
+# Loading work.datapath(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux3(fast)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.mux2(fast)
+# Loading work.alu(fast)
+# Loading work.mux4(fast)
+# Loading work.imem(fast)
+# Loading work.dmem(fast)
 # 0 ps
-# 462 ns
-# WARNING: No extended dataflow license exists
-# WARNING: No extended dataflow license exists
-# End time: 21:49:45 on Mar 20,2026, Elapsed time: 0:05:17
-# Errors: 0, Warnings: 2
+# 630 ns
+# Break key hit
+# End time: 15:12:08 on Mar 25,2026, Elapsed time: 0:54:20
+# Errors: 0, Warnings: 0

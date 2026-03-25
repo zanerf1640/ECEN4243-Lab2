@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1765232551">
-  <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1774469357">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
-  <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
+  <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="design_1_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/fpga/src/imem.sv">
@@ -44,7 +47,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd"/>
         <Attr Name="ImportTime" Val="1581973660"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -53,7 +56,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/lab2/lab2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../lab2/lab2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
         <Attr Name="ImportTime" Val="1581972879"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -84,7 +87,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/constr.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/lab2/lab2.srcs/constrs_1/new/constr.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../lab2/lab2.srcs/constrs_1/new/constr.xdc"/>
         <Attr Name="ImportTime" Val="1581968929"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -108,7 +111,7 @@
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI_Converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_top_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
 </GenRun>
