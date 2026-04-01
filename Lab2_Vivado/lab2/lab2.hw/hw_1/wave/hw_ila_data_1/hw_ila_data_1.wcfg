@@ -3,24 +3,24 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/ece-admin/Desktop/lab2/lab2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="C:/Users/zafranc/Desktop/ECEN4243-Lab2/Lab2_Vivado/lab2/lab2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="1,025"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomStartTime time="170"></ZoomStartTime>
+      <ZoomEndTime time="2,669"></ZoomEndTime>
+      <Cursor1Time time="733"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+      <NameColumnWidth column_width="726"></NameColumnWidth>
+      <ValueColumnWidth column_width="173"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="6" />
    <wave_markers>
    </wave_markers>
-   <wvobject type="array" fp_name="design_1_i/top_0/inst/PC">
+   <wvobject fp_name="design_1_i/top_0/inst/PC" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/top_0/inst/PC[31:0]</obj_property>
       <obj_property name="ObjectShortName">PC[31:0]</obj_property>
@@ -28,7 +28,7 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="design_1_i/top_0/inst/writeDataM">
+   <wvobject fp_name="design_1_i/top_0/inst/writeDataM" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/top_0/inst/writeDataM[31:0]</obj_property>
       <obj_property name="ObjectShortName">writeDataM[31:0]</obj_property>
@@ -36,7 +36,7 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="design_1_i/top_0/inst/Instr">
+   <wvobject fp_name="design_1_i/top_0/inst/Instr" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/top_0/inst/Instr[31:0]</obj_property>
       <obj_property name="ObjectShortName">Instr[31:0]</obj_property>
@@ -44,7 +44,7 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="design_1_i/top_0/inst/addressM">
+   <wvobject fp_name="design_1_i/top_0/inst/addressM" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/top_0/inst/addressM[31:0]</obj_property>
       <obj_property name="ObjectShortName">addressM[31:0]</obj_property>
@@ -52,7 +52,7 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="design_1_i/top_0/inst/readDataM">
+   <wvobject fp_name="design_1_i/top_0/inst/readDataM" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/top_0/inst/readDataM[31:0]</obj_property>
       <obj_property name="ObjectShortName">readDataM[31:0]</obj_property>
@@ -60,7 +60,7 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="design_1_i/top_0/inst/reset">
+   <wvobject fp_name="design_1_i/top_0/inst/reset" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/top_0/inst/reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
