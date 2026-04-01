@@ -1,0 +1,7 @@
+addi 1 time unit execution
+
+beq 1 time unit execution
+
+sw 32 time units execution
+
+lw 37 time units execution  #Changed lw instruction to 000ea583 bc or memory access issues
